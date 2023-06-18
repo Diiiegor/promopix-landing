@@ -1,19 +1,20 @@
 $text-color:#ffffff;
 
 
-body, html {
+body {
   background: #1E1E20;
-  padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   color: $text-color;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 header {
   .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .header-title {
@@ -26,32 +27,41 @@ header {
   .early-access{
     display: flex;
     align-items: center;
-    gap: 20px;
+    padding: 0;
+    border-radius: 20px;
+    background:#191B1F ;
+    border: 1px solid white;
+    overflow: hidden;
     input{
-      height: 30px;
+      height: 40px;
+      margin: 0;
       background: #191B1F;
       border: none;
       text-align: center;
       color: white;
       font-family: 'Nunito', sans-serif;
-      font-weight: 1000;
-      letter-spacing: 1px;
+      padding: 0 30px;
+      font-size: 15px;
       &:focus-visible{
-        outline: 0px solid;
+        outline: 0 solid;
       }
     }
     button{
-      height: 31px;
-      background: transparent;
-      border-image-slice: 1;
-      border-width: 2px;
-      border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+      height: 40px;
+      background: white;
       font-family: 'Nunito', sans-serif;
-      font-weight: 1000;
+      font-weight: 900;
       letter-spacing: 1px;
-      color: white;
-      padding-left: 30px;
-      padding-right: 30px;
+      color: black;
+      border: none;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      &:hover{
+        cursor: pointer;
+      }
+      &:active{
+        opacity: 0.8;
+      }
     }
   }
 }
