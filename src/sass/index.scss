@@ -1,0 +1,57 @@
+$text-color:#ffffff;
+
+
+body, html {
+  background: #1E1E20;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: $text-color;
+}
+
+header {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .header-title {
+    font-weight: 1000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle at 120.71% 50%, #ff9c6f 0, #ff9277 6.25%, #ff887e 12.5%, #ff7c87 18.75%, #ff708f 25%, #ff6398 31.25%, #ff55a2 37.5%, #ff48ab 43.75%, #f23cb5 50%, #df34bf 56.25%, #c833cb 62.5%, #ad38d6 68.75%, #8c40e1 75%, #5e48ec 81.25%, #0051f4 87.5%, #0058fb 93.75%, #005eff 100%);
+  }
+
+  .early-access{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    input{
+      height: 30px;
+      background: #191B1F;
+      border: none;
+      text-align: center;
+      color: white;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 1000;
+      letter-spacing: 1px;
+      &:focus-visible{
+        outline: 0px solid;
+      }
+    }
+    button{
+      height: 31px;
+      background: transparent;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 1000;
+      letter-spacing: 1px;
+      color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
