@@ -1,8 +1,8 @@
-$text-color:#ffffff;
+$text-color: #ffffff;
 
 
 body {
-  background: #1E1E20;
+  background: #06040e;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   color: $text-color;
@@ -23,15 +23,16 @@ header {
     background-image: radial-gradient(circle at 120.71% 50%, #ff9c6f 0, #ff9277 6.25%, #ff887e 12.5%, #ff7c87 18.75%, #ff708f 25%, #ff6398 31.25%, #ff55a2 37.5%, #ff48ab 43.75%, #f23cb5 50%, #df34bf 56.25%, #c833cb 62.5%, #ad38d6 68.75%, #8c40e1 75%, #5e48ec 81.25%, #0051f4 87.5%, #0058fb 93.75%, #005eff 100%);
   }
 
-  .early-access{
+  .early-access {
     display: flex;
     align-items: center;
     padding: 0;
     border-radius: 20px;
-    background:#191B1F ;
+    background: #191B1F;
     border: 1px solid white;
     overflow: hidden;
-    input{
+
+    input {
       height: 40px;
       margin: 0;
       background: #191B1F;
@@ -41,11 +42,13 @@ header {
       font-family: 'Nunito', sans-serif;
       padding: 0 30px;
       font-size: 15px;
-      &:focus-visible{
+
+      &:focus-visible {
         outline: 0 solid;
       }
     }
-    button{
+
+    button {
       height: 40px;
       background: white;
       font-family: 'Nunito', sans-serif;
@@ -55,10 +58,12 @@ header {
       border: none;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
-      &:hover{
+
+      &:hover {
         cursor: pointer;
       }
-      &:active{
+
+      &:active {
         opacity: 0.8;
       }
     }
@@ -66,9 +71,15 @@ header {
 }
 
 
-.description-title{
+.description-title {
   font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  padding-top: 50px;
 }
-.description-body{
+
+.description-body {
+  padding-top: 50px;
+  font-size: 20px;
 
 }
